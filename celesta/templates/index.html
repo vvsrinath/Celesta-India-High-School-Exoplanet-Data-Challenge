@@ -145,6 +145,7 @@
     <div class="obj-card glass reveal" id="obj-card" hidden>
       <div class="obj-card-inner">
         <div class="obj-image-wrap" id="obj-image-wrap">
+          <div class="obj-image-placeholder">🔭</div>
           <img id="obj-image" src="" alt="" class="obj-image" />
           <div class="obj-image-overlay"></div>
         </div>
@@ -187,7 +188,7 @@
         <div class="metric-val">{{ '%.1f'|format(value * 100) }}<span>{{ unit }}</span></div>
         <div class="metric-name">{{ label }}</div>
         <div class="metric-bar">
-          <div class="metric-fill" style="width: {{ '%.1f'|format(value * 100) }}%"></div>
+          <div class="metric-fill" data-width="{{ '%.1f'|format(value * 100) }}"></div>
         </div>
       </div>
       {% endfor %}
@@ -236,7 +237,7 @@
       <div class="feat-row">
         <div class="feat-name">{{ name }}</div>
         <div class="feat-bar-wrap">
-          <div class="feat-bar" style="width: {{ '%.2f'|format(imp / stats.feature_importance[0][1] * 100) }}%"></div>
+          <div class="feat-bar" data-width="{{ '%.2f'|format(imp / stats.feature_importance[0][1] * 100) }}"></div>
         </div>
         <div class="feat-val">{{ '%.4f'|format(imp) }}</div>
       </div>

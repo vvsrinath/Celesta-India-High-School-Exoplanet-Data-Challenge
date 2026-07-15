@@ -168,7 +168,11 @@
   const bars = document.querySelectorAll('.metric-fill, .feat-bar');
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) { entry.target.style.width = entry.target.style.width; io.unobserve(entry.target); }
+      if (entry.isIntersecting) {
+        const w = entry.target.dataset.width;
+        if (w) entry.target.style.width = w + '%';
+        io.unobserve(entry.target);
+      }
     });
   }, { threshold: 0.3 });
   bars.forEach(b => io.observe(b));
