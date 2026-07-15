@@ -230,13 +230,13 @@
     'Proxima Centauri b': 'https://assets.science.nasa.gov/dynamicimage/assets/science/astro/exo-explore/assets/content/planets/superearth-7.jpg?w=1280&fit=clip',
     'TRAPPIST-1e': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/TRAPPIST-1e_artist_impression_2018.jpg/640px-TRAPPIST-1e_artist_impression_2018.jpg',
     '51 Pegasi b': 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Artist%27s_impression_of_51_Pegasi_b.jpg/640px-Artist%27s_impression_of_51_Pegasi_b.jpg',
-    'HD 209458 b': 'https://images-assets.nasa.gov/image/PIA20056/PIA20056~medium.jpg',
-    'Kepler-452b': 'https://images-assets.nasa.gov/image/PIA19825/PIA19825~medium.jpg',
+    'HD 209458 b': '/static/images/hd209458b.jpg',
+    'Kepler-452b': '/static/images/kepler452b.jpg',
     // Stars — Hubble/ESO imagery
-    'Proxima Centauri': 'https://astrobiology.nasa.gov/uploads/filer_public/b6/ea/b6ea3f72-e29b-4a82-a7a1-c9bdc0c1d59d/artists_impression_of_proxima_centauri_b_shown_hypothetically_as_an_arid_rocky_super-earth.jpg',
-    'Betelgeuse': 'https://cdn.eso.org/images/screen/eso0927a.jpg',
+    'Proxima Centauri': '/static/images/proxima_centauri.jpg',
+    'Betelgeuse': '/static/images/betelgeuse.jpg',
     'Sirius': 'https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/releases/2005/12/STScI-01EVT7Z416PH8S7BGJQZH87ARV.tif?w=1280&fit=clip',
-    'Alpha Centauri': 'https://c02.purpledshub.com/uploads/sites/48/2025/08/alpha-centauri-a-planet-illustration.jpg',
+    'Alpha Centauri': '/static/images/alpha_centauri.jpg',
     'Polaris': 'https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/releases/2006/01/STScI-01EVT7S2CEJ2N8QJ1RDM6BZRC0.tif?w=1280&fit=clip',
     // Nebulae
     'Orion Nebula': 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Orion_Nebula_-_Hubble_2006.jpg/640px-Orion_Nebula_-_Hubble_2006.jpg',
