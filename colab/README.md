@@ -12,11 +12,10 @@ repository stays under 10 MB.
 
 | File | Purpose | Open in Colab |
 |---|---|---|
-| **`Celesta_Submission.ipynb`** | ⭐ Hackathon submission — full pipeline, 13 sections, SHAP | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/celesta/blob/main/colab/Celesta_Submission.ipynb) |
-| `Celesta_Colab.ipynb` | Extended analysis with extra visualisations | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/celesta/blob/main/colab/Celesta_Colab.ipynb) |
-| `Celesta_Hackathon_Notebook.ipynb` | Development scratchpad / iteration history | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/celesta/blob/main/colab/Celesta_Hackathon_Notebook.ipynb) |
+| **`Celesta_Submission.ipynb`** | ⭐ Hackathon submission — full pipeline, 13 sections, SHAP | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vvsrinath/Celesta-India-High-School-Exoplanet-Data-Challenge/blob/main/colab/Celesta_Submission.ipynb) |
+| `Celesta_Colab.ipynb` | Extended analysis with extra visualisations | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vvsrinath/Celesta-India-High-School-Exoplanet-Data-Challenge/blob/main/colab/Celesta_Colab.ipynb) |
+| `Celesta_Hackathon_Notebook.ipynb` | Development scratchpad / iteration history | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vvsrinath/Celesta-India-High-School-Exoplanet-Data-Challenge/blob/main/colab/Celesta_Hackathon_Notebook.ipynb) |
 
-> Replace `YOUR_USERNAME` with your GitHub username after pushing to GitHub.
 
 ---
 

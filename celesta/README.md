@@ -493,7 +493,7 @@ Open `notebooks/Celesta_Submission.ipynb` in Google Colab. Click **Runtime → R
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/celesta.git
+git clone https://github.com/vvsrinath/Celesta-India-High-School-Exoplanet-Data-Challenge.git
 cd celesta
 
 # 2. Install runtime dependencies
