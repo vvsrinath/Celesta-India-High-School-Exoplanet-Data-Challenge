@@ -1,40 +1,34 @@
-# git
-.git/
-.gitignore
-.gitattributes
-
-# Python cache
+# Never copy these into the Docker build context
 __pycache__/
 *.py[cod]
+*.pyc
 *.pyo
-.pythonlibs/
-*.egg-info/
+.venv/
+venv/
+env/
 
-# dev tools
-.vscode/
-.idea/
-*.swp
-*.swo
-.DS_Store
-
-# large raw data not needed inside Docker
-# (koi_stripped.csv IS needed — it's the training data for stage 1)
-KOI_Cumulative_clean.csv
-Celesta_Dataset_Guide.pdf
-attached_assets/
-
-# docs (GitHub Pages static site — not part of the Docker app)
-docs/
-
-# model.joblib is built inside Docker, don't copy a stale local one in
+# Large generated file — trained inside the Docker build itself
 model.joblib
 
-# notebook and readme
-*.ipynb
-README.md
+# Notebooks (not needed by the web app)
+notebooks/
 
-# wiki pages (GitHub Wiki — not part of the Docker app)
-wiki/
-
-# logs
+# Developer / scratch files
+attached_assets/
 *.log
+.DS_Store
+Thumbs.db
+
+# Git and CI
+.git/
+.gitignore
+.github/
+
+# Docs (static site, not part of the server)
+docs/
+
+# Replit-specific
+.replit
+replit.nix
+replit.md
+.local/

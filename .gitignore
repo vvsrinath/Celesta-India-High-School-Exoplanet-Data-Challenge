@@ -31,15 +31,20 @@ nbexec.log
 _build_notebook.py
 catboost_info/
 
-# Large generated artifacts — not stored in git
-# model.joblib (~47 MB) is trained locally via train_model.py or Dockerfile
+# Large generated artifacts — NOT in git; regenerate locally
 celesta/model.joblib
-/KOI_Cumulative_clean.csv
-/exoplanet_best_model.joblib
+KOI_Cumulative_clean.csv
+exoplanet_best_model.joblib
 
-# Developer working assets (screenshots, pasted images, scratch files)
+# Developer scratch files
 attached_assets/
 celesta/attached_assets/
 
-# Replit internal
-.replit.nix
+# Replit internals
+.pythonlibs/
+.cache/
+.local/skills/
+.local/tasks/
+replit.nix
+
+# docs/ is TRACKED — GitHub Pages static site (do NOT ignore)
