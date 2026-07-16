@@ -17,18 +17,29 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs/
+      - name: Enable GitHub Pages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          STATUS=$(gh api repos/${{ github.repository }}/pages --jq '.html_url' 2>/dev/null || echo "disabled")
+          if [ "$STATUS" = "disabled" ]; then
+            echo "Pages not enabled. Attempting to enable..."
+            gh api repos/${{ github.repository }}/pages \
+              --method POST \
+              -f source[branch]=main \
+              -f source[path]=/docs \
+              --silent 2>/dev/null && echo "SUCCESS: Pages enabled" || echo "FAILED: Need manual enable"
+          else
+            echo "Pages already enabled at: $STATUS"
+          fi
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
